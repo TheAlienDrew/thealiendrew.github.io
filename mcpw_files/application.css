@@ -191,7 +191,7 @@ section {
 #PageHeader {
   font-size: 2.36859em;
   line-height: 4.20873em;
-  background: #ccc url("background: #ccc url("https://mcrpw.github.io/img/header.jpg") center center no-repeat;") center center no-repeat;
+  background: #ccc url("background: #ccc url(https://mcrpw.github.io/img/header.jpg) center center no-repeat;") center center no-repeat;
   background-size: cover;
   color: white; }
   @media screen and (max-width: 650px) {
