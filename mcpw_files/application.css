@@ -193,7 +193,7 @@ section {
   line-height: 4.20873em;
   background: #ccc url("https://mcrpw.github.io/img/header.jpg") center center no-repeat;
   background-size: cover;
-  color: white; }
+  color: black; }
   @media screen and (max-width: 650px) {
     #PageHeader {
       line-height: 1.333em;
