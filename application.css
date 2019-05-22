@@ -113,7 +113,8 @@ h1 {
   font-size: 1.77689em;
   font-weight: bold;
   padding: 1em 0 0.42219em 0;
-  margin: 0; }
+  margin: 0;
+  background-color: white; }
   h1:first-child {
     padding-top: 0.56278em; }
 
