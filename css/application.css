@@ -153,12 +153,12 @@ section {
       opacity: 1;
       text-decoration: none; }
   section:nth-child(3n) {
-    background-color: #626262;
+    background-color: #1F1F1F;
     color: #f0f0f0; }
     section:nth-child(3n) h1 a:hover, section:nth-child(3n) h2 a:hover, section:nth-child(3n) h3 a:hover, section:nth-child(3n) h4 a:hover, section:nth-child(3n) h5 a:hover {
       color: #44a2ff; }
   section:nth-child(3n+2) {
-    background-color: #1F1F1F;
+    background-color: #0F0F0F;
     color: #c0c0c0; }
     section:nth-child(3n+2) h1 a:hover, section:nth-child(3n+2) h2 a:hover, section:nth-child(3n+2) h3 a:hover, section:nth-child(3n+2) h4 a:hover, section:nth-child(3n+2) h5 a:hover {
       color: #3174be; }
