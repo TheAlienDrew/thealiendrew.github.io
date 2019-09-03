@@ -1,19 +1,19 @@
 /* i really want this to be global */
 
 /* URL's to images that were converted to data URI's
-			 resizer: http://i.imgur.com/hyb90YC.png
-   down-arrow-active: http://i.imgur.com/paWZt7f.png
- down-arrow-disabled: http://i.imgur.com/hJVnFr4.png
-  down-arrow-enabled: http://i.imgur.com/rGqTWWG.png
-   left-arrow-active: http://i.imgur.com/BhwUFGl.png
- left-arrow-disabled: http://i.imgur.com/FocYdIW.png
-  left-arrow-enabled: http://i.imgur.com/4wBXM2p.png
-  right-arrow-active: http://i.imgur.com/q39FeM6.png
-right-arrow-disabled: http://i.imgur.com/ZDzomkI.png
- right-arrow-enabled: http://i.imgur.com/WrfBmNE.png
-     up-arrow-active: http://i.imgur.com/78jbDC2.png
-   up-arrow-disabled: http://i.imgur.com/ng0Quya.png
-    up-arrow-enabled: http://i.imgur.com/nCkVuVg.png
+          Down: http://i.imgur.com/YNqmT9k.png
+   Down Active: http://i.imgur.com/hWIaNsY.png
+ Down Disabled: http://i.imgur.com/b7qGKL0.png
+          Left: http://i.imgur.com/cL5mFwu.png
+   Left Active: http://i.imgur.com/iuucflB.png
+ Left Disabled: http://i.imgur.com/ifPTTqJ.png
+         Right: http://i.imgur.com/2hAKwF4.png
+  Right Active: http://i.imgur.com/bqJfZnR.png
+Right Disabled: http://i.imgur.com/tc5OiSR.png
+            Up: http://i.imgur.com/JU9dTiB.png
+     Up Active: http://i.imgur.com/NdSzXBk.png
+   Up Disabled: http://i.imgur.com/1MilXmj.png
+       Resizer: http://i.imgur.com/qcqpBJW.png
 */
 ::-webkit-scrollbar
 {
