@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
-  <head><titleThis webpage demonstrates the webview bug (must be loaded inside a webview)</title></head>
+  <head><title>WebView bug example</title></head>
   <style>
   body, html {width: 100%; height: 100%; margin: 0; padding: 0}
   .first-row {position: absolute; top: 0; left: 0; right: 0}
   .first-row p {margin-top: 20px; margin-left: auto; margin-right: auto; width: 90%}
   .second-row {padding-top: 30px; position: absolute; top: 100px; left: 0; right: 0; bottom: 0}
   .second-row iframe {display: block; margin: 0 auto; height: 90%; width: 90%; border: 5px solid red}
+  @media only screen and (max-width: 768px) {
+    .first-row p {margin-top: 0 !important}
+  }
   </style>
   <body style="background-color:black;color:white;margin:0">
     <div class="first-row">
