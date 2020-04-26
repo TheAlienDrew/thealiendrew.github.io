@@ -1,8 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head><titleThis webpage demonstrates the webview bug (must be loaded inside a webview)</title></head>
+  <style>
+  body, html {width: 100%; height: 100%; margin: 0; padding: 0}
+  .first-row {position: absolute; top: 0; left: 0; right: 0; height: 100px;}
+  .first-row p {margin-top: 20px; padding-left: 10vw; padding-right: 10vw}
+  .second-row {padding-top: 30px; position: absolute; top: 100px; left: 0; right: 0; bottom: 0}
+  .second-row iframe {display: block; margin: 0 auto; height: 90%; width: 90%; border: 5px solid red}
+  </style>
   <body style="background-color:black;color:white;margin:0">
-    <p style="padding-top:10px;padding-bottom:10px;padding-left:20vw;padding-right:20vw"><b>Outlined in red below is the iframe containing a webpage. Running this webpage on Chrome, the CSS themes work fine, but run this in webview and you'll find the second iframe (inside the first iframe) doesn't load the CSS style properly.</b></p>
-    <iframe src="https://support.office.com/client/results?NS=stickynotes&Context=%7B%22ThemeId%22:4,%22LinkColor%22:%2293CFF7%22,%22IsWebShell%22:true,%22Domain%22:%22www.onenote.com%22%7D&Locale=en-US&ShowNav=true&Version=16&omkt=en-US&origin=https://www.onenote.com&feedback=0&moveSupportCard=0" name="example" scrolling="no" allowfullscreen="allowfullscreen" style="display:block;margin:0 auto;height:80vh;width:25vw;border:5px solid red"></iframe>
+    <div class="first-row">
+      <p><b>Outlined in red below is the iframe containing a webpage of which can demonstrate the CSS style issue with iframes. Running this webpage on a desktop Chrome browser, the CSS themes work fine, but run this in a WebView on Android, and you'll find the second iframe (inside the first iframe) doesn't load the CSS style properly.</b></p>
+    </div>
+    <div class="second-row">
+      <iframe src="https://support.office.com/client/results?NS=stickynotes&Context=%7B%22ThemeId%22:4,%22LinkColor%22:%2293CFF7%22,%22IsWebShell%22:true,%22Domain%22:%22www.onenote.com%22%7D&Locale=en-US&ShowNav=true&Version=16&omkt=en-US&origin=https://www.onenote.com&feedback=0&moveSupportCard=0" name="example" scrolling="no" allowfullscreen="allowfullscreen"></iframe>
+    </div>
   </body>
 </html>
