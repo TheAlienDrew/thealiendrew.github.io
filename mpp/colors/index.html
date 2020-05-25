@@ -12,7 +12,9 @@
                 color: white;
                 text-shadow: #000 2px 2px;
             }
+            a:link, a:visited, a:hover, a:active { color: #0f0; }
             #colors {
+                display: inline-block;
                 line-height: 26px;
                 font-family: verdana, "DejaVu Sans", sans-serif;
                 font-size: 12px;
@@ -32,13 +34,17 @@
                 text-align: center;
                 line-height: 15px;
             }
+            #homepage a { text-decoration: none; }
         </style>
         <link rel="icon" href="https://www.multiplayerpiano.com/favicon.ico">
         <script src="https://www.multiplayerpiano.com/Color.js"></script>
     </head>
     <body>
         <h1>Multiplayer Piano - List of Name Colors</h1>
+        <div id="colors"></div>
+        <h1 id="homepage"><a href="https://thealiendrew.github.io/">https://thealiendrew.github.io/</a></h1>
         <script>
+            const COLORS_ID = "colors";
             const COLOR_CLASS = "color";
             var htmlContents = "";
             // shows all the possible colors you could want
@@ -106,12 +112,9 @@
                 htmlContents += "<div class='" + COLOR_CLASS + "' style='background-color: " + currentHEX + "'>" + currentName + " (" + currentHEX + ")</div>";
             }
 
-            // show colors in paragraph
-            // DO SOMETHING WITH htmlContents
-            var colorsDiv = document.createElement("div");
-            colorsDiv.id = "colors";
+            // show colors in div
+            var colorsDiv = document.getElementById(COLORS_ID);
             colorsDiv.innerHTML = htmlContents;
-            document.body.appendChild(colorsDiv);
         </script>
     </body>
 </html>
