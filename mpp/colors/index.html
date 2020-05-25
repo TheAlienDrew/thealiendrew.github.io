@@ -93,15 +93,14 @@
                 else allColors.push(theColor);
             }
             var allColorsSorted = allShades.concat(allColors);
-            var allColorsSortedLength = allColorsSorted.length;
             // toHexa is an in-built function to the Color library
             var k;
-            for(k = 0; k < allColorsSortedLength; k++) {
+            for(k = 0; k < allColorsSorted.length; k++) {
                 // add the name and it's hex
                 var currentColor = allColorsSorted[k];
                 var currentName = currentColor[0];
                 var currentHEX = currentColor[1].toHexa();
-                htmlContents += "<span style='background-color: " + currentHEX + "'>" + currentName + " (" + currentHEX + ")</span>" + (k != allColorsSortedLength - 1 ? " ": '');
+                htmlContents += "<span style='background-color: " + currentHEX + "'>" + currentName + " (" + currentHEX + ")</span>";
             }
 
             // show colors in paragraph
