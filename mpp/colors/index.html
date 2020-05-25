@@ -12,15 +12,17 @@
                 color: white;
                 text-shadow: #000 2px 2px;
             }
-            p {
+            #colors {
                 line-height: 26px;
                 font-family: verdana, "DejaVu Sans", sans-serif;
                 font-size: 12px;
                 color: white;
                 text-shadow: -1px 0 0 #000, 1px 0 0 #000, 0 1px 0 #000, 0 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
             }
-            span {
+            .color {
                 white-space: nowrap;
+                float: left;
+                position: relative;
                 padding: 4px;
                 margin: 2px;
                 border-radius: 2px;
@@ -37,6 +39,7 @@
     <body>
         <h1>Multiplayer Piano - List of Name Colors</h1>
         <script>
+            const COLOR_CLASS = "color";
             var htmlContents = "";
             // shows all the possible colors you could want
             var allColors = Object.entries(Color.map); // [a][b]: a = name, b = color
@@ -100,14 +103,15 @@
                 var currentColor = allColorsSorted[k];
                 var currentName = currentColor[0];
                 var currentHEX = currentColor[1].toHexa();
-                htmlContents += "<span style='background-color: " + currentHEX + "'>" + currentName + " (" + currentHEX + ")</span>";
+                htmlContents += "<div class='" + COLOR_CLASS + "' style='background-color: " + currentHEX + "'>" + currentName + " (" + currentHEX + ")</div>";
             }
 
             // show colors in paragraph
             // DO SOMETHING WITH htmlContents
-            var para = document.createElement("p");
-            para.innerHTML = htmlContents;
-            document.body.appendChild(para);
+            var colorsDiv = document.createElement("div");
+            colorsDiv.id = "colors";
+            colorsDiv.innerHTML = htmlContents;
+            document.body.appendChild(colorsDiv);
         </script>
     </body>
 </html>
