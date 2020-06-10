@@ -1,1 +1,0 @@
-The assets local path url will need to be changed accordingly when using cloning the files to another website.
