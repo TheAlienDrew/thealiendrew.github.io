@@ -1,0 +1,23 @@
+{
+  "extends": "../tsconfig-parent.json",
+  "compilerOptions": {
+    "outFile": "../../build/ts/flash.js"
+  },
+  "include": [
+    "./../../build/ts/base.d.ts",
+    "./../../build/ts/tools.d.ts",
+    "./../../build/ts/avm2.d.ts",
+    "./../../build/ts/swf.d.ts",
+    "./../../build/ts/rtmp.d.ts",
+    "./avm1.d.ts",
+    "./references.ts"
+//    "./**/*.ts"
+  ],
+  "exclude": [
+    "./automation/**/*.ts",
+    "./desktop/**/*.ts",
+    "./globalization/**/*.ts",
+    "./text/engine/*.ts",
+    "./text/ime/*.ts"
+  ]
+}

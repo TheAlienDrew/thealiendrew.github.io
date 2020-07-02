@@ -1,0 +1,12 @@
+{
+  "extends": "../tsconfig-parent.json",
+  "compilerOptions": {
+    "outFile": "../../build/ts/swf.js"
+  },
+  "include": [
+    "./../../build/ts/base.d.ts",
+    "./../../build/ts/tools.d.ts",
+    "./references.ts",
+    "./**/*.ts"
+  ]
+}

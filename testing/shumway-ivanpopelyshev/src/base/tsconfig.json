@@ -1,0 +1,10 @@
+{
+  "extends": "../tsconfig-parent.json",
+  "compilerOptions": {
+    "outFile": "../../build/ts/base.js"
+  },
+  "include": [
+    "./references.ts",
+    "./**/*"
+  ]
+}

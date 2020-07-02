@@ -1,0 +1,12 @@
+{
+  "extends": "../tsconfig-parent.json",
+  "compilerOptions": {
+    "outFile": "../../build/ts/gfx.js"
+  },
+  "include": [
+    "./../../build/ts/base.d.ts",
+    "./../../build/ts/tools.d.ts",
+    "./../../build/ts/gfx-base.d.ts",
+    "./references.ts"
+  ]
+}
