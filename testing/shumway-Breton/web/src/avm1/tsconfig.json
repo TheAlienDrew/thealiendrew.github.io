@@ -1,0 +1,14 @@
+{
+  "extends": "../tsconfig-parent.json",
+  "compilerOptions": {
+    "outFile": "../../build/ts/avm1.js"
+  },
+
+  "include": [
+    "./../../build/ts/base.d.ts",
+    "./../../build/ts/tools.d.ts",
+    "../../build/ts/avm2.d.ts",
+    "./flash.d.ts",
+    "./references.ts"
+  ]
+}
