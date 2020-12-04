@@ -5266,7 +5266,7 @@ var $author$project$Bouncingalienlogo$init = function (_v0) {
 	return _Utils_Tuple2(
 		{
 			P: true,
-			m: {M: true, N: false, j: 180, n: 191, A: 0, B: 0},
+			m: {M: true, N: false, j: 191, n: 180, A: 0, B: 0},
 			q: {
 				ab: '#000000',
 				ac: './logos',
