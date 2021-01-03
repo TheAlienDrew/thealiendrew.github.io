@@ -133,7 +133,7 @@
         <script>
             var appScroller = document.getElementById("app_scroll");
             const scrollAmount = appScroller.clientHeight;
-            const scrollRestart = 7 * scrollAmount;
+            const scrollRestart = (appScroller.childElementCount - 1) * scrollAmount;
             
             var buttonLocation = 0;
             setInterval(function() {
