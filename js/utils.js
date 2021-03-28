@@ -1,4 +1,4 @@
-function headingAnchors(self_link_text) {
+var headingAnchors = function(self_link_text) {
 	self_link_text = self_link_text || '#';
 	var headings = document.querySelectorAll('h1');
 
