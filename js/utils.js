@@ -26,4 +26,4 @@ var headingAnchors = function(self_link_text) {
 	var h = location.hash;
 	location.hash = '';
 	location.hash = h;
-}
+};
